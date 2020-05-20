@@ -1702,3 +1702,8 @@ declare function classIs<
  * This variable will be automatically replaced by the "version" string from the package.json file
  */
 declare const PKG_VERSION: string;
+
+/**
+ * Returns traceback of the current try error from inside a catch clause. undefined outside of catch.
+ **/
+declare function catchTraceback(): string | undefined;
